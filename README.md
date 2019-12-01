@@ -1,5 +1,6 @@
 # firstattempt
-first attempt at creating a repo.  now i get it - this is where I put in a description of the project.
-Firstattempt is a menu driven internet radio station player.  a menu of 7 music genres is presented as choices to listen to, with the eighth choice being one to exit the program.
-As a user selects a genre choice (integer) a python program is run which uses the integer as variable to call up a list of internet radio stations based on the genre, and a randomly selected internet radio station is chosen from the list and is played using mpg123.
-About as simple as you can imagine.
+
+Firstattempt is a menu driven internet radio station player.  The Wrapper, or interface, consists of a menu of 7 music genres presented as choices to listen to, with the eighth choice being one to exit the program (0).
+As a user selects a genre choice ( inputs an integer) a python program is run which uses the integer as variable to call up a list of internet radio stations based on the genre, and a randomly selected internet radio station is chosen from the list and is played using mpg123.
+The intent is to alter the menu by swapping out Genres as needed by simple edits to the wrapper. Also included are the sub scripts that are called based on the menu choice, and their function is to house a list of pre defined internet stations of a particular genre.  A random selection is made by the subscript and passed back to the wrapper by the subprocess.call function. All lists deployed by the wrapper are noted by "test", followed by their menu reference as an integer, followed by "a.py".  Any list currently not deployed contains a description of the music for future reference.  
+For now, firstattempt is designed to be a sandbox for testing.  A subsequent attempt will be derived to have buttons replace the menu, with a color code on the button representing a genre instead of an integer menu choice.
