@@ -1,0 +1,24 @@
+import os
+import sys
+import random
+import subprocess
+
+btn1234 = ['http://radiostationurl/here',
+	   '',
+	   '',
+	   '',
+	   '',
+	   '',
+	   '',
+	   '',
+	   '',
+	   '',
+	   '']
+
+btn1234_choice = random.choice(btn1234)
+
+print ("Randomly selected item from list is ", btnpurp_choice)
+
+subprocess.call(['mpg123', btn1234_choice])
+
+
