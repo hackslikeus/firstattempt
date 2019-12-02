@@ -19,5 +19,5 @@ btnbrwn_choice = random.choice(btnbrwn)
 
 print ("Magic 8 Ball radio has chosen ", btnbrwn_choice)
 
-subprocess.call(['mpg123', btnbrwn_choice])
-
+#subprocess.call(['mpg123', btnbrwn_choice])
+subprocess.call(['mpg123', '-q', btnbrown_choice, " --preload 1"])
