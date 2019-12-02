@@ -17,8 +17,8 @@ btnpurp = ['http://5.39.71.159:8942/stream',
 
 btnpurp_choice = random.choice(btnpurp)
 
-print ("Yah Mahn! And we listen to ", btnpurp_choice)
+print ("Yah Mahn! listening to ", btnpurp_choice)
 
-subprocess.call(['mpg123', btnpurp_choice])
-
+#subprocess.call(['mpg123', btnpurp_choice])
+subprocess.call(['mpg123', '-q', btnpurp_choice, " --preload 1"])
 
