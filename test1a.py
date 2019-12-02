@@ -9,5 +9,6 @@ btnblue_choice = random.choice(btnblue)
 
 print ("Randomly selected item from list is ", btnblue_choice)
 
-subprocess.call(['mpg123', btnblue_choice])
-
+# removed the meta tag feed and added buffer to reduce pops
+#subprocess.call(['mpg123', btnblue_choice])
+subprocess.call(['mpg123', '-q', btnblue_choice, " --preload 1"])
