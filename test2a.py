@@ -11,5 +11,5 @@ print ("Randomly selected item from list is ", btngray_choice)
 
 #remove meta tag feed and added buffer to reduce pop
 #subprocess.call(['mpg123', btngray_choice])
-subprocess.call(['mpg123', '-q', btnblue_choice, " --preload 1"])
+subprocess.call(['mpg123', '-q', btngray_choice, " --preload 1"])
 
