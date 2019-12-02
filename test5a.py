@@ -19,5 +19,5 @@ btnpink_choice = random.choice(btnpink)
 
 print ("Randomly selected item from list is ", btnpink_choice)
 
-subprocess.call(['mpg123', btnpink_choice])
-
+#subprocess.call(['mpg123', btnpink_choice])
+subprocess.call(['mpg123', '-q', btnpink_choice, " --preload 1"])
